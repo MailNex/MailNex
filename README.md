@@ -332,15 +332,15 @@ flowchart LR
 
 ## 快速开始
 
-MailNex 交付为单文件可执行程序。前往 [Releases](https://github.com/MailNex/MailNex-/releases) 下载对应平台的产物（完整性校验见发行包里的 `SHA256SUMS.txt`）：
+MailNex 交付为单文件可执行程序。前往 [Releases](https://github.com/MailNex/MailNex/releases) 下载对应平台的产物（完整性校验见发行包里的 `SHA256SUMS.txt`）：
 
 | 平台 | 产物 |
 | --- | --- |
-| Windows x64 | [`mailnex-2.8.11-windows-x64.exe`](https://github.com/MailNex/MailNex-/releases/download/v2.8.11/mailnex-2.8.11-windows-x64.exe) |
-| Linux x64 | [`mailnex-2.8.11-linux-x64`](https://github.com/MailNex/MailNex-/releases/download/v2.8.11/mailnex-2.8.11-linux-x64) |
-| Linux arm64 | [`mailnex-2.8.11-linux-arm64`](https://github.com/MailNex/MailNex-/releases/download/v2.8.11/mailnex-2.8.11-linux-arm64) |
-| macOS x64 | [`mailnex-2.8.11-macos-x64`](https://github.com/MailNex/MailNex-/releases/download/v2.8.11/mailnex-2.8.11-macos-x64) |
-| macOS arm64 | [`mailnex-2.8.11-macos-arm64`](https://github.com/MailNex/MailNex-/releases/download/v2.8.11/mailnex-2.8.11-macos-arm64) |
+| Windows x64 | [`mailnex-2.8.11-windows-x64.exe`](https://github.com/MailNex/MailNex/releases/download/v2.8.11/mailnex-2.8.11-windows-x64.exe) |
+| Linux x64 | [`mailnex-2.8.11-linux-x64`](https://github.com/MailNex/MailNex/releases/download/v2.8.11/mailnex-2.8.11-linux-x64) |
+| Linux arm64 | [`mailnex-2.8.11-linux-arm64`](https://github.com/MailNex/MailNex/releases/download/v2.8.11/mailnex-2.8.11-linux-arm64) |
+| macOS x64 | [`mailnex-2.8.11-macos-x64`](https://github.com/MailNex/MailNex/releases/download/v2.8.11/mailnex-2.8.11-macos-x64) |
+| macOS arm64 | [`mailnex-2.8.11-macos-arm64`](https://github.com/MailNex/MailNex/releases/download/v2.8.11/mailnex-2.8.11-macos-arm64) |
 
 首次启动会在可执行文件所在目录创建 `data` 目录（SQLite 数据库 + 邮件存储），确保该目录可写。
 
