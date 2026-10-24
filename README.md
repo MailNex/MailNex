@@ -332,7 +332,17 @@ flowchart LR
 
 ## 快速开始
 
-MailNex 交付为单文件可执行程序，拿到对应平台的产物后直接运行即可。首次启动会在可执行文件所在目录创建 `data` 目录（SQLite 数据库 + 邮件存储），确保该目录可写。
+MailNex 交付为单文件可执行程序。前往 [Releases](https://github.com/MailNex/MailNex-/releases) 下载对应平台的产物（完整性校验见发行包里的 `SHA256SUMS.txt`）：
+
+| 平台 | 产物 |
+| --- | --- |
+| Windows x64 | [`mailnex-2.8.11-windows-x64.exe`](https://github.com/MailNex/MailNex-/releases/download/v2.8.11/mailnex-2.8.11-windows-x64.exe) |
+| Linux x64 | [`mailnex-2.8.11-linux-x64`](https://github.com/MailNex/MailNex-/releases/download/v2.8.11/mailnex-2.8.11-linux-x64) |
+| Linux arm64 | [`mailnex-2.8.11-linux-arm64`](https://github.com/MailNex/MailNex-/releases/download/v2.8.11/mailnex-2.8.11-linux-arm64) |
+| macOS x64 | [`mailnex-2.8.11-macos-x64`](https://github.com/MailNex/MailNex-/releases/download/v2.8.11/mailnex-2.8.11-macos-x64) |
+| macOS arm64 | [`mailnex-2.8.11-macos-arm64`](https://github.com/MailNex/MailNex-/releases/download/v2.8.11/mailnex-2.8.11-macos-arm64) |
+
+首次启动会在可执行文件所在目录创建 `data` 目录（SQLite 数据库 + 邮件存储），确保该目录可写。
 
 ```powershell
 .\mailnex-2.8.11-windows-x64.exe
@@ -570,15 +580,6 @@ data/
 ```
 
 迁移服务器时，停止服务后整体拷贝 `data` 目录即可保留全部数据。初始数据包含 `admin` / `admin123`、示例角色、菜单与按钮权限、示例域名、邮箱账号、收件人组、模板、变量、过滤规则与安全策略；示例账号与密钥均为占位，接入真实环境前必须替换。
-
-## 文档
-
-| 文档 | 内容 |
-| --- | --- |
-| [`docs/backend-architecture.md`](docs/backend-architecture.md) | 后端模块、请求链路与关键设计 |
-| [`docs/frontend-backend-integration.md`](docs/frontend-backend-integration.md) | 前后端接口约定与页面接入方式 |
-| [`docs/admin-redesign-architecture.md`](docs/admin-redesign-architecture.md) | 管理后台信息架构与设计语言落地 |
-| [`docs/ORBIT_API.md`](docs/ORBIT_API.md) | Orbit 中控接口与对接说明 |
 
 ## 许可证
 
