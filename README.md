@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-v2.8.11-C6FF72?style=flat-square" alt="版本 v2.8.11">
+  <img src="https://img.shields.io/badge/version-v2.9.4-C6FF72?style=flat-square" alt="版本 v2.9.4">
   <img src="https://img.shields.io/badge/Go-1.21%2B-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go 1.21+">
   <img src="https://img.shields.io/badge/Vue-3-42B883?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue 3">
   <img src="https://img.shields.io/badge/SQLite-pure--Go-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite 纯 Go 驱动">
@@ -336,23 +336,23 @@ MailNex 交付为单文件可执行程序。前往 [Releases](https://github.com
 
 | 平台 | 产物 |
 | --- | --- |
-| Windows x64 | [`mailnex-2.8.11-windows-x64.exe`](https://github.com/MailNex/MailNex/releases/download/v2.8.11/mailnex-2.8.11-windows-x64.exe) |
-| Linux x64 | [`mailnex-2.8.11-linux-x64`](https://github.com/MailNex/MailNex/releases/download/v2.8.11/mailnex-2.8.11-linux-x64) |
-| Linux arm64 | [`mailnex-2.8.11-linux-arm64`](https://github.com/MailNex/MailNex/releases/download/v2.8.11/mailnex-2.8.11-linux-arm64) |
-| macOS x64 | [`mailnex-2.8.11-macos-x64`](https://github.com/MailNex/MailNex/releases/download/v2.8.11/mailnex-2.8.11-macos-x64) |
-| macOS arm64 | [`mailnex-2.8.11-macos-arm64`](https://github.com/MailNex/MailNex/releases/download/v2.8.11/mailnex-2.8.11-macos-arm64) |
+| Windows x64 | [`mailnex-2.9.4-windows-x64.exe`](https://github.com/MailNex/MailNex/releases/download/v2.9.4/mailnex-2.9.4-windows-x64.exe) |
+| Linux x64 | [`mailnex-2.9.4-linux-x64`](https://github.com/MailNex/MailNex/releases/download/v2.9.4/mailnex-2.9.4-linux-x64) |
+| Linux arm64 | [`mailnex-2.9.4-linux-arm64`](https://github.com/MailNex/MailNex/releases/download/v2.9.4/mailnex-2.9.4-linux-arm64) |
+| macOS x64 | [`mailnex-2.9.4-macos-x64`](https://github.com/MailNex/MailNex/releases/download/v2.9.4/mailnex-2.9.4-macos-x64) |
+| macOS arm64 | [`mailnex-2.9.4-macos-arm64`](https://github.com/MailNex/MailNex/releases/download/v2.9.4/mailnex-2.9.4-macos-arm64) |
 
 首次启动会在可执行文件所在目录创建 `data` 目录（SQLite 数据库 + 邮件存储），确保该目录可写。
 
 ```powershell
-.\mailnex-2.8.11-windows-x64.exe
+.\mailnex-2.9.4-windows-x64.exe
 ```
 
 Linux / macOS 先赋予执行权限再运行：
 
 ```bash
-chmod +x mailnex-2.8.11-linux-x64
-./mailnex-2.8.11-linux-x64
+chmod +x mailnex-2.9.4-linux-x64
+./mailnex-2.9.4-linux-x64
 ```
 
 浏览器打开 `http://localhost:33333`，默认管理员 `admin` / `admin123`。
@@ -409,7 +409,7 @@ nc -vz gmail-smtp-in.l.google.com 25
 $env:MAILNEX_ADDR = ':9000'
 $env:MAILNEX_DATA_DIR = 'D:\mailnex-data'
 $env:JWT_SECRET = '替换为至少32字节的随机字符串'
-.\mailnex-2.8.11-windows-x64.exe
+.\mailnex-2.9.4-windows-x64.exe
 ```
 
 <details>
